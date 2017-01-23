@@ -2,22 +2,33 @@
 <!doctype html>
 <html>
 <head>
-    <title>Application Form</title>
+	<style>
+	<title>Application Form</title>
+	/*<link rel="stylesheet" href="./style.css">*/ 
+	
+	p {
+		border:3px; border-style:solid; border-color:#FF0000; padding: 1em;
+
+		/*background-color: red;*/
+	}
+		
+	</style>
 </head>
+
 <body>
-	<h1> Apply for a Job: </h1>
-		<p> Available jobs are, software engineer, QA engineer and Product manager 
-		</p>
-	<form action="application-form" method="post">
+	<h1> Welcome to Job Mart!: </h1>
+	<p> If you are dedicated to work in the software industry, you have come to the right place. We are always looking for enthusiastic individuals like you.
+	</p>
+	<form action="/application-success" metod="POST">
 		First Name: <input type = "text" name = "first name"> </br>
 		Last Name:  <input type = "text" name = "last name"> </br>
-		Salary:  <input type = "text" name = "salary"> </br>
-		Job Applying for: <select name = "Job Type:">
+		Expected Salary:  <input type = "text" name = "salary"> </br>
+		Job Applying for: <select name = "job type"></br>
 		<option value = "Software Engineer">Software Engineer</option>
 		<option value = "QA Engineer">QA Engineer</option>
 		<option value = "Product Manager">Product Manager</option>
-	
-		Submit: <input type="submit" value='Submit'>
+		</select> </br>
+		<input type = "submit" name = "submit"> </br>
 	</form>
 </body>
 </html>
